@@ -123,7 +123,7 @@
         var json_sett = null;
         var roominfo = document.getElementById("room-settings");
         info = roominfo.textContent;
-        var ref_bot = "@basicBot=";
+        var ref_bot = "@AchaeaBot=";
         var ind_ref = info.indexOf(ref_bot);
         if (ind_ref > 0) {
             var link = info.substring(ind_ref + ref_bot.length, info.length);
@@ -179,9 +179,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.3.4",
+        version: "1.0.0",
         status: false,
-        name: "basicBot",
+        name: "AchaeaBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -191,14 +191,14 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "AchaeaBot",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
             cmdDeletion: true,
-            maximumAfk: 120,
+            maximumAfk: 300,
             afkRemoval: true,
             maximumDc: 60,
             bouncerPlus: true,
@@ -208,15 +208,15 @@
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
-            voteSkip: false,
-            voteSkipLimit: 10,
+            voteSkip: true,
+            voteSkipLimit: 4,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 30,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            lockskipPosition: 3,
+            lockskipPosition: 1,
             lockskipReasons: [
                 ["theme", "This song does not fit the room theme. "],
                 ["op", "This song is on the OP list. "],
