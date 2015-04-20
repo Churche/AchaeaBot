@@ -1711,8 +1711,8 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat(subChat(basicBot.chat.commandslink, {botname: basicBot.settings.botName, link: http://tinyurl.com/acheaacmds}));
-                    }
+
+                        API.sendChat(subChat(basicBot.chat.commandslink, {botname: basicBot.settings.botName, link: basicBot.cmdLink}));                    }
                 }
             },
 
