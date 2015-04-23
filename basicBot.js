@@ -299,7 +299,6 @@
                     API.sendChat('!afkdisable');
                     API.sendChat('!joindisable');
                 if (basicBot.status && basicBot.settings.autodisable)
-                 }
              },
             autoskip: false,
             autoskipTimer: null,
