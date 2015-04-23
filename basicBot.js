@@ -179,7 +179,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "1.1.7",
+        version: "1.1.9",
         status: false,
         name: "AchaeaBot",
         loggedInID: null,
@@ -293,16 +293,15 @@
             usercommand: true,
             allcommand: true,
             afkInterval: null,
-            autodisableInterval: null,
-            autodisableFunc: function () {
-            	if (basicBot.status && basicBot.settings.autodisable) {
-                    API.sendChat('!afkdisable');
-                    API.sendChat('!joindisable');
-                if (basicBot.status && basicBot.settings.autodisable)
-             },
             autoskip: false,
             autoskipTimer: null,
             autodisableInterval: null,
+            autodisableFunc: function () {
+                if (basicBot.status && basicBot.settings.autodisable) {
+                    API.sendChat('!afkdisable');
+                    API.sendChat('!joindisable');
+                }
+            },
             queueing: 0,
             queueable: true,
             currentDJID: null,
