@@ -293,6 +293,14 @@
             usercommand: true,
             allcommand: true,
             afkInterval: null,
+            autodisableInterval: null,
+            autodisableFunc: function () {
+            	if (basicBot.status && basicBot.settings.autodisable) {
+                    API.sendChat('!afkdisable');
+                    API.sendChat('!joindisable');
+                if (basicBot.status && basicBot.settings.autodisable)
+                 }
+             },
             autoskip: false,
             autoskipTimer: null,
             autodisableInterval: null,
