@@ -175,11 +175,11 @@
     };
 
     var botCreator = "Matthew (Yemasthui)";
-    var botMaintainer = "Benzi (Quoona)"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botMaintainer = "Churche (Churche)"
+    var botCreatorIDs = 3787208", "000000"];
 
     var basicBot = {
-        version: "1.1.9",
+        version: "1.2.0",
         status: false,
         name: "AchaeaBot",
         loggedInID: null,
