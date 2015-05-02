@@ -176,7 +176,7 @@
 
     var botCreator = "Matthew (Yemasthui)";
     var botMaintainer = "Churche (Churche)"
-    var botCreatorIDs = "3787208", "000000"];
+    var botCreatorIDs = ["3787208", "000000"];
 
     var basicBot = {
         version: "1.2.1",
