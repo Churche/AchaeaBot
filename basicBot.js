@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/Churche/basicBot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -179,13 +179,13 @@
     var botCreatorIDs = ["3787208", "000000"];
 
     var basicBot = {
-        version: "1.2.1",
+        version: "1.2.4",
         status: false,
         name: "AchaeaBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
-        cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        scriptLink: "https://rawgit.com/Churche/basicBot/master/basicBot.js",
+        cmdLink: "http://git.io/vJVca",
+        chatLink: "https://rawgit.com/Churche/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "AchaeaBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/Churche/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -225,6 +225,7 @@
                 ["sound", "The song you played had bad sound quality or no sound. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
+                ["black", "The song you' played didn't have any sound or visuals for some users."]
             ],
             ball: [
             "Signs point to yes.",
@@ -264,8 +265,8 @@
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
-            motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motdInterval: 50,
+            motd: "Welcome to the Achaea Plug.dj community!",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -280,8 +281,8 @@
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://rawgit.com/Churche/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+                OP: "https://rawgit.com/Churche/basicBot-customization/master/blacklists/ExampleOPlist.json"
             }
         },
         room: {
