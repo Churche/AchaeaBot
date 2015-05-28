@@ -179,7 +179,7 @@
     var botCreatorIDs = ["3787208", "000000"];
 
     var basicBot = {
-        version: "1.2.4",
+        version: "1.2.5",
         status: false,
         name: "AchaeaBot",
         loggedInID: null,
@@ -811,11 +811,11 @@
             if (basicBot.settings.welcome && greet) {
                 welcomeback ?
                     setTimeout(function (user) {
-                        API.sendChat(subChat(basicBot.chat.welcomeback, {name: user.username}));
+                        API.sendChat(subChat(basicBot.chat.welcomeback, @{name: user.username}));
                     }, 1 * 1000, user)
                     :
                     setTimeout(function (user) {
-                        API.sendChat(subChat(basicBot.chat.welcome, {name: user.username}));
+                        API.sendChat(subChat(basicBot.chat.welcome, @{name: user.username}));
                     }, 1 * 1000, user);
             }
         },
